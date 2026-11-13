@@ -30,9 +30,18 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s6#htfn6w3w23_k3cb8at1)$6g_n^=($ih^f#4=#!$6%ifg@@-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+     'blog-backend-system-project-3.vercel.app',
+    '.vercel.app',
+    'localhost',
+    '127.0.0.1',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://blog-backend-system-project-3.vercel.app',
+]
 
 
 # Application definition
